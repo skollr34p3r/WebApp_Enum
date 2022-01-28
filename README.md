@@ -8,13 +8,16 @@ Because of this, we need to install a previous version of go in order to install
 
 I downloaded the "go1.15.9.linux-amd64.tar.gz" file, then followed the insrtuctions for Linux here to install it: https://go.dev/doc/install
 
-If you installed using the downloads page from the Official Go website, the download is likely in your ~/Downloads directory. Sudo su to become root (if not already running as root). Change to the directory where yourgo tar.gz file is in then execute the following commands:
+If you installed using the downloads page from the Official Go website, the download is likely in your ~/Downloads directory. Sudo su to become root (if not already running as root). Change to the directory where yourgo tar.gz file is in then execute the following command:
 
 `rm -rf /usr/local/go && tar -C /usr/local -xzf go1.17.6.linux-amd64.tar.gz`
 
+Then add the following to your .zshrc or .bashrc (whichever you're using)
 `export PATH=$PATH:/usr/local/go/bin`
 
 `export PATH="$PATH:$HOME/go/bin"`
+
+Finally source your .zshrc or .bashrc
 
 This should properly install a previous version of Go on the system. You can check it by typing "go version".
 
