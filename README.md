@@ -11,7 +11,9 @@ I downloaded the "go1.15.9.linux-amd64.tar.gz" file, then followed the insrtucti
 If you installed using the downloads page from the Official Go website, the download is likely in your ~/Downloads directory. Sudo su to become root (if not already running as root). Change to the directory where yourgo tar.gz file is in then execute the following commands:
 
 `rm -rf /usr/local/go && tar -C /usr/local -xzf go1.17.6.linux-amd64.tar.gz`
+
 `export PATH=$PATH:/usr/local/go/bin`
+
 `export PATH="$PATH:$HOME/go/bin"`
 
 This should properly install a previous version of Go on the system. You can check it by typing "go version".
